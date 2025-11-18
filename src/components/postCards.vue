@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 
 // taking post from postpage
 const props = defineProps({
@@ -6,6 +8,8 @@ const props = defineProps({
         type:Object,
     } 
 });
+
+
 
 
 
@@ -20,7 +24,7 @@ const props = defineProps({
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text">{{ post.body }}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <RouterLink :to="`/postDetails/${post.id}`" class="btn btn-primary">Go to post </RouterLink>
                     </div>
                     </div>
     </div>
