@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted,ref } from 'vue';
 import PostCards from '../components/postCards.vue';
-import Navbar from './parts/Navbar.vue';
+import Navbar from '../pages/parts/Navbar.vue';
 import axios from 'axios';
  
 

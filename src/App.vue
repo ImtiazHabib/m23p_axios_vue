@@ -1,11 +1,11 @@
 <script setup>
-import PostPage from './pages/postPage.vue';
+
 
 
 </script>
 
 <template>
-   <PostPage />
+   <RouterView />
 </template>
 
 <style scoped>
